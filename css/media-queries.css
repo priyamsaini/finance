@@ -1,0 +1,94 @@
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    position: absolute;
+    top: 10vh;
+    align-items: center;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: var(--secondaryColor);
+    width: 0;
+    height: 90vh;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+  }
+
+  nav button {
+    display: block;
+  }
+
+  .wave svg {
+    display: none;
+  }
+
+  .hero {
+    height: 100%;
+    padding: 50px;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .services {
+    margin-block: 20px;
+  }
+
+  .services-card-container {
+    flex-wrap: wrap;
+  }
+
+  .services .primary-button {
+    margin-top: 10px;
+  }
+
+  .about {
+    padding: 50px;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-right h3 {
+    font-size: 1.6rem;
+  }
+
+  .whyus {
+    padding: 50px;
+  }
+
+  .customers {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .customer-card-container{
+    padding: 0;
+    /* max-width: 400px; */
+  }
+
+  .customer-card{
+    min-width: 100%;
+    padding: 50px 0 0;
+    height: 100%;
+  }
+
+  .customer-card-inner{
+    width: 100%;
+    height: 100%;
+  }
+
+  footer {
+    padding: 50px;
+    flex-direction: column;
+  }
+}
