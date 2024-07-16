@@ -31,12 +31,12 @@ var menuItems = document.querySelector("#menu-links");
 var menuIcon = document.querySelector("#menu-icon");
 
 menuBtn.addEventListener("click", function () {
-  if (menuItems.style.width == "60%") {
+  if (menuItems.style.width == "100%") {
     menuItems.style.width = "0";
     menuIcon.classList.remove("fa-x");
     menuIcon.classList.add("fa-bars");
   } else {
-    menuItems.style.width = "60%";
+    menuItems.style.width = "100%";
     menuIcon.classList.add("fa-x");
     menuIcon.classList.remove("fa-bars");
   }
